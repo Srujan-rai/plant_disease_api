@@ -1,0 +1,6 @@
+flask
+keras
+numpy
+tensorflow
+json
+base64
