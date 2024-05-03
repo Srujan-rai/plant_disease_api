@@ -1,6 +1,4 @@
-flask
-keras
-numpy
+Flask
 tensorflow
-json
-base64
+numpy
+keras
