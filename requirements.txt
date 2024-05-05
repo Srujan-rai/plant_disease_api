@@ -2,3 +2,4 @@ Flask
 tensorflow==2.15.1
 numpy
 keras
+os

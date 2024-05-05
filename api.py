@@ -49,4 +49,7 @@ def receive_image():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    host = '0.0.0.0'
+    port = int(os.environ.get('PORT', 8000)) 
+    app.run(debug=False, host=host, port=port)
