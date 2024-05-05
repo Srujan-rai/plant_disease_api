@@ -49,7 +49,4 @@ def receive_image():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    import os
-    host = '0.0.0.0'
-    port = int(os.environ.get('PORT', 8000))  # Use the PORT environment variable provided by Render
-    app.run(debug=False, host=host, port=port)
+    app.run(debug=True)
