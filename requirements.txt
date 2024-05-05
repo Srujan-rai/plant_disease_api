@@ -1,4 +1,4 @@
 Flask
-tensorflow==2.16.1
+tensorflow==2.10.1
 numpy
 keras
