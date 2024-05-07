@@ -33,3 +33,4 @@ curl -X POST \
   -d '{
     "image": "<base64-encoded image>"
 }'
+...
