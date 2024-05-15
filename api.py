@@ -32,7 +32,7 @@ with open('remedies.json', 'r') as remedies_file:
 
 @app.route('/')
 def home():
-    return "<h1>Send a base64 encoded string of the affected plant leaf to /predit endpoint</h1>"
+    return "<h1>Send a base64 encoded string of the affected plant leaf photo to '/predit' endpoint</h1>"
 
 
 @app.route('/predict', methods=['POST'])
