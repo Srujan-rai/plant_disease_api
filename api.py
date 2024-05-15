@@ -29,6 +29,12 @@ ref = {index: disease for index, disease in zip(*data_tuple)}
 with open('remedies.json', 'r') as remedies_file:
     remedies_data = json.load(remedies_file)
 
+
+@app.route('/')
+def home():
+    return "<h1>Send a base64 encoded string of the affected plant leaf to /predit endpoint</h1>"
+
+
 @app.route('/predict', methods=['POST'])
 def receive_image():
     try:

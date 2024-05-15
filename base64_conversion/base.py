@@ -10,7 +10,7 @@ def image_to_base64(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    image_path = "bc3.jpg"  # Replace with the path to your image file
+    image_path = "tomato.jpeg"  # Replace with the path to your image file
     base64_string = image_to_base64(image_path)
     
     # Create a JSON object with the Base64 image string
