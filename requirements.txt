@@ -2,3 +2,5 @@ Flask
 tensorflow
 numpy
 keras
+gunicorn
+grpcio==1.48.1
