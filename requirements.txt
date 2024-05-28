@@ -3,4 +3,4 @@ tensorflow
 numpy
 keras
 gunicorn
-grpcio==1.48.1
+grpcio==1.41.1
