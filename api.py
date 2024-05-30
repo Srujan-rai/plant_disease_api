@@ -5,9 +5,11 @@ import numpy as np
 from keras.models import load_model     
 from keras.applications.vgg19 import preprocess_input
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 app = Flask(__name__)
 model = load_model("best_model.h5")
+cors(app)
 
 data_tuple = (
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
@@ -57,5 +59,5 @@ def receive_image():
 if __name__ == "__main__":
     import os
     host = '0.0.0.0'
-    port = int(os.environ.get('PORT', 8000))  # Use the PORT environment variable provided by Render
+    port = int(os.environ.get('PORT', 80))  # Use the PORT environment variable provided by Render
     app.run(debug=False, host=host, port=port)
